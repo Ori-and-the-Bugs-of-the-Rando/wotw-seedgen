@@ -12376,6 +12376,10 @@ anchor UpperPools.DrainPuzzleEntrance at -1386, -4062:  # At the right of the do
       Damage=60, WaterDash, Launch
       Damage=60, WaterDash, Grapple, DoubleJump OR Dash OR Glide OR Sword OR Hammer OR Spear=1 OR Shuriken=1 OR Blaze=1 OR Flash=1 OR Sentry=1
       Damage=100, WaterDash, DoubleJump, TripleJump
+  state UpperPools.DrainRoomPurpleWall:
+    unsafe:
+      UpperPools.ButtonDoorAboveTree, Dash, Bash  # Bash-chain the slug on the left to the purple wall
+      DoubleJump, Bash, Grapple  # Unstick the slug from the ceiling with bash, stall with DJ on the way down and bash it to the wall. Movement to the slug is probably redundant with UpperPools.WaterfallEC pickup
 
   pickup UpperPools.WaterfallEC:  # have to solve with and without the water drained so it doesn't softlock
     moki:
