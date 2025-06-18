@@ -11792,6 +11792,10 @@ anchor EastPools.MissilePuzzle at -1425, -4144:  # Below where the trial starts
     unsafe:
       Damage=220, Bash
       Damage=160, Bash, WaterDash
+  state EastPools.ArenaWall:
+    unsafe:  # Fetch torpedo, bash it into the arena water and bash it against the wall on the other side
+      Bash, Water OR Damage=320
+      Bash, WaterDash, Damage=140
 
   pickup EastPools.EnergyHarvestShard:
     moki:
