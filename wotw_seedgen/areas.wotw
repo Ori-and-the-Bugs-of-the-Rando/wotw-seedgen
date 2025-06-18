@@ -11705,6 +11705,10 @@ anchor EastPools.LupoArea at -1409, -4163:  # Checkpoint to the left of Lupo
 
   conn EastPools.NextToLupoOre:
     moki: BreakWall=20
+    unsafe: # Fetch torpedo and bash it against the breakable wall
+      EastPools.LupoPurpleFloor, Bash, Water
+      EastPools.LupoPurpleFloor, Bash, Damage=180, WaterDash
+      EastPools.LupoPurpleFloor, Bash, Damage=320
   conn EastPools.MissilePuzzle:
     moki, EastPools.LupoPurpleFloor: Water
     kii, EastPools.LupoPurpleFloor: WaterDash, Damage=80
