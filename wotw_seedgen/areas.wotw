@@ -12538,6 +12538,8 @@ anchor UpperPools.DrainPuzzleExit at -1318, -4081:  # After solving the Drain Pu
     kii:
       Damage=100, Bash
       WaterDash, Damage=80, Bash
+  state EastPools.ArenaWall:
+    unsafe: UpperPools.UpperWaterDrained, Bash, Damage=20 OR Water  # Juggle torpedo next to slug down to the purple wall - https://www.twitch.tv/pizzaspren/clip/UnusualHilariousGazelleCopyThis-0VqfSFg2Xsu-PGCn
 
   pickup EastPools.PurpleWallHC:
     moki, UpperPools.UpperWaterDrained:
